@@ -21,4 +21,16 @@ final class AddCustomerViewModel: ObservableObject {
         addCustomerContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         addCustomerContext.parent = viewContext
     }
+    
+    func addCustomer(withName name: String) -> Customer {
+        return storageProvider.addCustomer(withName: name, context: addCustomerContext)
+    }
+    
+    func addItem(called name: String, deliveredBy deadline: Date) -> Item {
+        return storageProvider.addItem(called: name, deliveredBy: deadline, context: addCustomerContext)
+    }
+    
+    func addItem(_ item: Item, customer: Customer) {
+        customer.addToItems(item)
+    }
 }
