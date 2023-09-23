@@ -9,14 +9,25 @@ import SwiftUI
 
 struct CustomerListView: View {
     @FetchRequest(fetchRequest: Customer.customersByDeadline)
-    var customers: FetchedResults<Customer>
+    private var customers: FetchedResults<Customer>
+    @State private var showSheet = false
     
     var body: some View {
         NavigationView {
             List {
             }
             .toolbar {
+                ToolbarItem {
+                    Button {
+                        showSheet.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
             }
+        }
+        .sheet(isPresented: $showSheet) {
+            AddCustomerView(showSheet: $showSheet)
         }
     }
 }
