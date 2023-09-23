@@ -48,6 +48,7 @@ struct AddCustomerView: View {
                 
                 ToolbarItem(placement: .confirmationAction) {
                     Button {
+                        viewModel.complete()
                         showSheet.toggle()
                     } label: {
                         Text("Add")
