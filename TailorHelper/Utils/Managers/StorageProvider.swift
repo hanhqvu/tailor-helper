@@ -13,7 +13,7 @@ class StorageProvider {
     let persistentContainer: NSPersistentContainer
     
     init() {
-        persistentContainer = NSPersistentContainer(name: "WatchReader")
+        persistentContainer = NSPersistentContainer(name: "TailorHelper")
         
         persistentContainer.loadPersistentStores(completionHandler: { description, error in
             if let error = error {

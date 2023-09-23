@@ -11,7 +11,7 @@ extension Customer {
     // fetch request with different sort
     static var customersByDeadline: NSFetchRequest<Customer> = {
         let request: NSFetchRequest<Customer> = Customer.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(keyPath: \Customer.deadline, ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \Customer.name, ascending: true)]
         
         return request
     }()
