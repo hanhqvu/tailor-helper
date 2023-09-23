@@ -13,7 +13,6 @@ struct CustomerDetailView: View {
     @StateObject var viewModel: CustomerDetailViewModel
 
     var body: some View {
-        NavigationView {
             VStack {
                 List {
                     Section("Personal Information") {
@@ -33,18 +32,17 @@ struct CustomerDetailView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        
+
                     } label: {
                         Image(systemName: "camera.badge.ellipsis")
                     }
-                    
+
                     Button {
-                        
+
                     } label: {
                         Image(systemName: "square.and.arrow.down.fill")
                     }
                 }
             }
-        }
     }
 }
