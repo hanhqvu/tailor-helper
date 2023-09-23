@@ -38,3 +38,22 @@ extension StorageProvider {
     }
 }
 
+extension StorageProvider {
+    func addCustomer(withName name: String, context: NSManagedObjectContext) -> Customer {
+        let customer = Customer(context: context)
+        customer.name = name
+        return customer
+    }
+    
+    func addItem(called name: String, needToDeliverBy deadline: Date, context: NSManagedObjectContext) -> Item {
+        let item = Item(context: context)
+        item.name = name
+        item.deadline = deadline
+        return item
+    }
+    
+    func addItem(_ item: Item, customer: Customer) {
+        customer.addToItems(item)
+    }
+}
+
