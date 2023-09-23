@@ -14,7 +14,8 @@ struct CustomerListView: View {
     
     var body: some View {
         NavigationView {
-            List {
+            List(customers) { customer in
+                Text(customer.name ?? "")
             }
             .toolbar {
                 ToolbarItem {
