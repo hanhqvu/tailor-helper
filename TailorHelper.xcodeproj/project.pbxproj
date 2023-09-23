@@ -16,6 +16,10 @@
 		C9BD0D1F2ABEAB4600C1B256 /* Customer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD0D1E2ABEAB4600C1B256 /* Customer+Ext.swift */; };
 		C9BD0D222ABEABFE00C1B256 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD0D212ABEABFE00C1B256 /* Measurements.swift */; };
 		C9D435B32ABED17B00CBDBDE /* AddCustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D435B22ABED17B00CBDBDE /* AddCustomerViewModel.swift */; };
+		C9D435B62ABEDB1400CBDBDE /* CustomerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D435B52ABEDB1400CBDBDE /* CustomerDetailView.swift */; };
+		C9D435B82ABEDECD00CBDBDE /* CustomerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D435B72ABEDECD00CBDBDE /* CustomerDetailViewModel.swift */; };
+		C9D435BA2ABEF29600CBDBDE /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9D435B92ABEF29600CBDBDE /* Config.plist */; };
+		C9D435BC2ABEF2F800CBDBDE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D435BB2ABEF2F800CBDBDE /* NetworkManager.swift */; };
 		C9E21A612ABECB180098DDB7 /* AddCustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E21A602ABECB180098DDB7 /* AddCustomerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		C9BD0D1E2ABEAB4600C1B256 /* Customer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+Ext.swift"; sourceTree = "<group>"; };
 		C9BD0D212ABEABFE00C1B256 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 		C9D435B22ABED17B00CBDBDE /* AddCustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewModel.swift; sourceTree = "<group>"; };
+		C9D435B52ABEDB1400CBDBDE /* CustomerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailView.swift; sourceTree = "<group>"; };
+		C9D435B72ABEDECD00CBDBDE /* CustomerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailViewModel.swift; sourceTree = "<group>"; };
+		C9D435B92ABEF29600CBDBDE /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		C9D435BB2ABEF2F800CBDBDE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C9E21A602ABECB180098DDB7 /* AddCustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +71,7 @@
 		C9BD0D052ABEA17B00C1B256 /* TailorHelper */ = {
 			isa = PBXGroup;
 			children = (
+				C9D435B92ABEF29600CBDBDE /* Config.plist */,
 				C9D435B02ABED15200CBDBDE /* Screens */,
 				C9E21A5F2ABECB060098DDB7 /* View */,
 				C9BD0D192ABEA37300C1B256 /* Utils */,
@@ -96,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C9BD0D0F2ABEA17C00C1B256 /* StorageProvider.swift */,
+				C9D435BB2ABEF2F800CBDBDE /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -137,6 +147,8 @@
 		C9D435B42ABEDA5500CBDBDE /* CustomerDetail */ = {
 			isa = PBXGroup;
 			children = (
+				C9D435B52ABEDB1400CBDBDE /* CustomerDetailView.swift */,
+				C9D435B72ABEDECD00CBDBDE /* CustomerDetailViewModel.swift */,
 			);
 			path = CustomerDetail;
 			sourceTree = "<group>";
@@ -208,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9BD0D0E2ABEA17C00C1B256 /* Preview Assets.xcassets in Resources */,
+				C9D435BA2ABEF29600CBDBDE /* Config.plist in Resources */,
 				C9BD0D0B2ABEA17C00C1B256 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,10 +236,13 @@
 				C9BD0D132ABEA17C00C1B256 /* TailorHelper.xcdatamodeld in Sources */,
 				C9BD0D1F2ABEAB4600C1B256 /* Customer+Ext.swift in Sources */,
 				C9BD0D102ABEA17C00C1B256 /* StorageProvider.swift in Sources */,
+				C9D435BC2ABEF2F800CBDBDE /* NetworkManager.swift in Sources */,
 				C9D435B32ABED17B00CBDBDE /* AddCustomerViewModel.swift in Sources */,
+				C9D435B62ABEDB1400CBDBDE /* CustomerDetailView.swift in Sources */,
 				C9BD0D092ABEA17B00C1B256 /* CustomerListView.swift in Sources */,
 				C9BD0D222ABEABFE00C1B256 /* Measurements.swift in Sources */,
 				C9BD0D072ABEA17B00C1B256 /* TailorHelperApp.swift in Sources */,
+				C9D435B82ABEDECD00CBDBDE /* CustomerDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
