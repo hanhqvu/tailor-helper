@@ -119,6 +119,7 @@
 		C9D435B02ABED15200CBDBDE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C9D435B42ABEDA5500CBDBDE /* CustomerDetail */,
 				C9D435B12ABED16300CBDBDE /* AddCustomer */,
 			);
 			path = Screens;
@@ -131,6 +132,13 @@
 				C9D435B22ABED17B00CBDBDE /* AddCustomerViewModel.swift */,
 			);
 			path = AddCustomer;
+			sourceTree = "<group>";
+		};
+		C9D435B42ABEDA5500CBDBDE /* CustomerDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomerDetail;
 			sourceTree = "<group>";
 		};
 		C9E21A5F2ABECB060098DDB7 /* View */ = {
