@@ -13,9 +13,15 @@ struct CustomerListView: View {
     @State private var showSheet = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(customers) { customer in
-                Text(customer.name ?? "")
+                NavigationLink(value: customer) {
+                    Text(customer.name ?? "")
+                }
+            }
+            .navigationTitle("Customers")
+            .navigationDestination(for: Customer.self) { customer in
+                CustomerDetailView(viewModel: CustomerDetailViewModel(sourceCustomer: customer))
             }
             .toolbar {
                 ToolbarItem {
