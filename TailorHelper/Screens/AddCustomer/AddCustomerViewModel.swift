@@ -22,15 +22,17 @@ final class AddCustomerViewModel: ObservableObject {
         addCustomerContext.parent = viewContext
     }
     
-    func addCustomer(withName name: String) -> Customer {
-        return storageProvider.addCustomer(withName: name, context: addCustomerContext)
+    func addCustomer() -> Customer {
+        return storageProvider.addCustomer(withName: customerName, context: addCustomerContext)
     }
     
-    func addItem(called name: String, deliveredBy deadline: Date) -> Item {
-        return storageProvider.addItem(called: name, deliveredBy: deadline, context: addCustomerContext)
+    func addItem() -> Item {
+        return storageProvider.addItem(called: itemName, deliveredBy: itemDeadline, context: addCustomerContext)
     }
     
-    func addItem(_ item: Item, customer: Customer) {
-        customer.addToItems(item)
+    func complete() {
+        let newCustomer = addCustomer()
+        let newItem = addItem()
+        newCustomer.addToItems(newItem)
     }
 }
