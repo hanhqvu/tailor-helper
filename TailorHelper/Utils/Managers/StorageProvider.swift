@@ -45,15 +45,11 @@ extension StorageProvider {
         return customer
     }
     
-    func addItem(called name: String, needToDeliverBy deadline: Date, context: NSManagedObjectContext) -> Item {
+    func addItem(called name: String, deliveredBy deadline: Date, context: NSManagedObjectContext) -> Item {
         let item = Item(context: context)
         item.name = name
         item.deadline = deadline
         return item
-    }
-    
-    func addItem(_ item: Item, customer: Customer) {
-        customer.addToItems(item)
     }
 }
 
