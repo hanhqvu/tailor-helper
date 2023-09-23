@@ -34,5 +34,9 @@ final class AddCustomerViewModel: ObservableObject {
         let newCustomer = addCustomer()
         let newItem = addItem()
         newCustomer.addToItems(newItem)
+        do {
+            try addCustomerContext.save()
+        } catch {
+        }
     }
 }
