@@ -15,6 +15,7 @@
 		C9BD0D132ABEA17C00C1B256 /* TailorHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9BD0D112ABEA17C00C1B256 /* TailorHelper.xcdatamodeld */; };
 		C9BD0D1F2ABEAB4600C1B256 /* Customer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD0D1E2ABEAB4600C1B256 /* Customer+Ext.swift */; };
 		C9BD0D222ABEABFE00C1B256 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD0D212ABEABFE00C1B256 /* Measurements.swift */; };
+		C9D435B32ABED17B00CBDBDE /* AddCustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D435B22ABED17B00CBDBDE /* AddCustomerViewModel.swift */; };
 		C9E21A612ABECB180098DDB7 /* AddCustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E21A602ABECB180098DDB7 /* AddCustomerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		C9BD0D122ABEA17C00C1B256 /* TailorHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TailorHelper.xcdatamodel; sourceTree = "<group>"; };
 		C9BD0D1E2ABEAB4600C1B256 /* Customer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+Ext.swift"; sourceTree = "<group>"; };
 		C9BD0D212ABEABFE00C1B256 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
+		C9D435B22ABED17B00CBDBDE /* AddCustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewModel.swift; sourceTree = "<group>"; };
 		C9E21A602ABECB180098DDB7 /* AddCustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 		C9BD0D052ABEA17B00C1B256 /* TailorHelper */ = {
 			isa = PBXGroup;
 			children = (
+				C9D435B02ABED15200CBDBDE /* Screens */,
 				C9E21A5F2ABECB060098DDB7 /* View */,
 				C9BD0D192ABEA37300C1B256 /* Utils */,
 				C9BD0D062ABEA17B00C1B256 /* TailorHelperApp.swift */,
@@ -113,11 +116,27 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		C9D435B02ABED15200CBDBDE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C9D435B12ABED16300CBDBDE /* AddCustomer */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C9D435B12ABED16300CBDBDE /* AddCustomer */ = {
+			isa = PBXGroup;
+			children = (
+				C9E21A602ABECB180098DDB7 /* AddCustomerView.swift */,
+				C9D435B22ABED17B00CBDBDE /* AddCustomerViewModel.swift */,
+			);
+			path = AddCustomer;
+			sourceTree = "<group>";
+		};
 		C9E21A5F2ABECB060098DDB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C9BD0D082ABEA17B00C1B256 /* CustomerListView.swift */,
-				C9E21A602ABECB180098DDB7 /* AddCustomerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +215,7 @@
 				C9BD0D132ABEA17C00C1B256 /* TailorHelper.xcdatamodeld in Sources */,
 				C9BD0D1F2ABEAB4600C1B256 /* Customer+Ext.swift in Sources */,
 				C9BD0D102ABEA17C00C1B256 /* StorageProvider.swift in Sources */,
+				C9D435B32ABED17B00CBDBDE /* AddCustomerViewModel.swift in Sources */,
 				C9BD0D092ABEA17B00C1B256 /* CustomerListView.swift in Sources */,
 				C9BD0D222ABEABFE00C1B256 /* Measurements.swift in Sources */,
 				C9BD0D072ABEA17B00C1B256 /* TailorHelperApp.swift in Sources */,

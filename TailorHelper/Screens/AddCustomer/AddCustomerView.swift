@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct AddCustomerView: View {
-    @State private var customerName = ""
-    @State private var itemName = ""
-    @State private var itemDeadline = Date()
+    @StateObject private var viewModel = AddCustomerViewModel()
     @Binding var showSheet: Bool
     
     var body: some View {
@@ -20,19 +18,19 @@ struct AddCustomerView: View {
                     Text("What is the customer name?")
                         .font(.headline)
                     
-                    TextField("John Appleseed", text: $customerName)
+                    TextField("John Appleseed", text: $viewModel.customerName)
                 }
                 
                 Section("Item Information") {
                     Text("What is the item?")
                         .font(.headline)
                     
-                    TextField("Jacket", text: $itemName)
+                    TextField("Jacket", text: $viewModel.itemName)
                     
                     Text("When does the customer wants the item delivered?")
                         .font(.headline)
 
-                    DatePicker("Please enter a time", selection: $itemDeadline, displayedComponents: .date)
+                    DatePicker("Please enter a time", selection: $viewModel.itemDeadline, displayedComponents: .date)
                         .labelsHidden()
                 }
             }
